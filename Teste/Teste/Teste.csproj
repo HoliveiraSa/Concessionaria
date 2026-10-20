@@ -54,6 +54,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tela04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tela04.Designer.cs">
+      <DependentUpon>tela04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tela05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tela05.Designer.cs">
+      <DependentUpon>tela05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tela06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tela06.Designer.cs">
+      <DependentUpon>tela06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tela07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tela07.Designer.cs">
+      <DependentUpon>tela07.cs</DependentUpon>
+    </Compile>
     <Compile Include="tela3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +102,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="tela04.resx">
+      <DependentUpon>tela04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tela05.resx">
+      <DependentUpon>tela05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tela06.resx">
+      <DependentUpon>tela06.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="tela3.resx">
       <DependentUpon>tela3.cs</DependentUpon>
     </EmbeddedResource>

@@ -32,5 +32,10 @@ namespace Teste
             //abrimos a nova tela
             novatela.Show();
         }
+
+        private void botao4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -202,6 +202,7 @@
             this.botao4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.botao4.TabIndex = 14;
             this.botao4.TabStop = false;
+            this.botao4.Click += new System.EventHandler(this.botao4_Click);
             // 
             // botao5
             // 

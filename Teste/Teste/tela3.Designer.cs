@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tela03));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bairro = new System.Windows.Forms.PictureBox();
@@ -45,6 +46,12 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.botao6 = new System.Windows.Forms.PictureBox();
+            this.botao7 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bairro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numero)).BeginInit();
@@ -58,6 +65,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.estado1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cidade1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logradouro1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.botao6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.botao7)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -225,6 +234,57 @@
             this.textBox3.Size = new System.Drawing.Size(991, 20);
             this.textBox3.TabIndex = 15;
             // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(249, 423);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(991, 20);
+            this.textBox4.TabIndex = 16;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(249, 477);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(991, 20);
+            this.textBox5.TabIndex = 18;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(263, 530);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(977, 20);
+            this.textBox6.TabIndex = 19;
+            // 
+            // botao6
+            // 
+            this.botao6.BackColor = System.Drawing.Color.Transparent;
+            this.botao6.Image = ((System.Drawing.Image)(resources.GetObject("botao6.Image")));
+            this.botao6.Location = new System.Drawing.Point(1143, 177);
+            this.botao6.Name = "botao6";
+            this.botao6.Size = new System.Drawing.Size(112, 62);
+            this.botao6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.botao6.TabIndex = 20;
+            this.botao6.TabStop = false;
+            this.botao6.Click += new System.EventHandler(this.botao6_Click);
+            // 
+            // botao7
+            // 
+            this.botao7.BackColor = System.Drawing.Color.Transparent;
+            this.botao7.Image = ((System.Drawing.Image)(resources.GetObject("botao7.Image")));
+            this.botao7.Location = new System.Drawing.Point(143, 570);
+            this.botao7.Name = "botao7";
+            this.botao7.Size = new System.Drawing.Size(112, 62);
+            this.botao7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.botao7.TabIndex = 21;
+            this.botao7.TabStop = false;
+            this.botao7.Click += new System.EventHandler(this.botao7_Click);
+            // 
             // tela03
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -232,6 +292,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1384, 846);
+            this.Controls.Add(this.botao7);
+            this.Controls.Add(this.botao6);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -267,6 +332,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.estado1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cidade1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logradouro1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.botao6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.botao7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,5 +357,11 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.PictureBox botao6;
+        private System.Windows.Forms.PictureBox botao7;
     }
 }

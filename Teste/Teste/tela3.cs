@@ -21,5 +21,32 @@ namespace Teste
         {
 
         }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void botao6_Click(object sender, EventArgs e)
+        {
+            //botao de clique, o código aqui dentro roda quando o usuário clica na foto
+            botao6.BorderStyle = BorderStyle.Fixed3D;
+            botao6.BorderStyle = BorderStyle.None;
+            //criamos uma nova instância da tela de destino
+            tela04 novatela = new tela04();
+            //abrimos a nova tela
+            novatela.Show();
+        }
+
+        private void botao7_Click(object sender, EventArgs e)
+        {
+            //botao de clique, o código aqui dentro roda quando o usuário clica na foto
+            botao7.BorderStyle = BorderStyle.Fixed3D;
+            botao7.BorderStyle = BorderStyle.None;
+            //criamos uma nova instância da tela de destino
+            tela02 novatela = new tela02();
+            //abrimos a nova tela
+            novatela.Show();
+        }
     }
 }
