@@ -1,0 +1,195 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PICHAU\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\Teste\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{786C190F-4010-487C-9F4C-A355E928F605}|Teste\\Teste.csproj|c:\\users\\pichau\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\teste\\teste\\tela_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{786C190F-4010-487C-9F4C-A355E928F605}|Teste\\Teste.csproj|solutionrelative:teste\\tela_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFA9B64E-F91D-42C5-BD9B-43340473B60F}|..\\teste02\\teste02\\teste02.csproj|c:\\users\\pichau\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\teste02\\teste02\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{786C190F-4010-487C-9F4C-A355E928F605}|Teste\\Teste.csproj|c:\\users\\pichau\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\teste\\teste\\tela10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{786C190F-4010-487C-9F4C-A355E928F605}|Teste\\Teste.csproj|solutionrelative:teste\\tela10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{786C190F-4010-487C-9F4C-A355E928F605}|Teste\\Teste.csproj|c:\\users\\pichau\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\teste\\teste\\tela07.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{786C190F-4010-487C-9F4C-A355E928F605}|Teste\\Teste.csproj|solutionrelative:teste\\tela07.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{786C190F-4010-487C-9F4C-A355E928F605}|Teste\\Teste.csproj|c:\\users\\pichau\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\teste\\teste\\tela06.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{786C190F-4010-487C-9F4C-A355E928F605}|Teste\\Teste.csproj|solutionrelative:teste\\tela06.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{786C190F-4010-487C-9F4C-A355E928F605}|Teste\\Teste.csproj|c:\\users\\pichau\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\teste\\teste\\tela3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{786C190F-4010-487C-9F4C-A355E928F605}|Teste\\Teste.csproj|solutionrelative:teste\\tela3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{786C190F-4010-487C-9F4C-A355E928F605}|Teste\\Teste.csproj|c:\\users\\pichau\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\teste\\teste\\tela04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{786C190F-4010-487C-9F4C-A355E928F605}|Teste\\Teste.csproj|solutionrelative:teste\\tela04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{786C190F-4010-487C-9F4C-A355E928F605}|Teste\\Teste.csproj|c:\\users\\pichau\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\teste\\teste\\tela05.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{786C190F-4010-487C-9F4C-A355E928F605}|Teste\\Teste.csproj|solutionrelative:teste\\tela05.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{786C190F-4010-487C-9F4C-A355E928F605}|Teste\\Teste.csproj|c:\\users\\pichau\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\teste\\teste\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{786C190F-4010-487C-9F4C-A355E928F605}|Teste\\Teste.csproj|solutionrelative:teste\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{786C190F-4010-487C-9F4C-A355E928F605}|Teste\\Teste.csproj|c:\\users\\pichau\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\teste\\teste\\teste02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{786C190F-4010-487C-9F4C-A355E928F605}|Teste\\Teste.csproj|solutionrelative:teste\\teste02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{786C190F-4010-487C-9F4C-A355E928F605}|Teste\\Teste.csproj|c:\\users\\pichau\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\teste\\teste\\tela08.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{786C190F-4010-487C-9F4C-A355E928F605}|Teste\\Teste.csproj|solutionrelative:teste\\tela08.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "tela_inicial.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PICHAU\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\Teste\\Teste\\tela_inicial.cs",
+              "RelativeDocumentMoniker": "Teste\\tela_inicial.cs",
+              "ToolTip": "C:\\Users\\PICHAU\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\Teste\\Teste\\tela_inicial.cs [Design]*",
+              "RelativeToolTip": "Teste\\tela_inicial.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T01:45:40.721Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PICHAU\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\Teste\\Teste\\Form1.cs",
+              "RelativeDocumentMoniker": "Teste\\Form1.cs",
+              "ToolTip": "C:\\Users\\PICHAU\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\Teste\\Teste\\Form1.cs [Design]",
+              "RelativeToolTip": "Teste\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T01:46:56.498Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "teste02.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PICHAU\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\Teste\\Teste\\teste02.cs",
+              "RelativeDocumentMoniker": "Teste\\teste02.cs",
+              "ToolTip": "C:\\Users\\PICHAU\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\Teste\\Teste\\teste02.cs [Design]",
+              "RelativeToolTip": "Teste\\teste02.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T01:45:51.332Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "tela3.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PICHAU\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\Teste\\Teste\\tela3.cs",
+              "RelativeDocumentMoniker": "Teste\\tela3.cs",
+              "ToolTip": "C:\\Users\\PICHAU\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\Teste\\Teste\\tela3.cs [Design]",
+              "RelativeToolTip": "Teste\\tela3.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T01:45:50.147Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "tela04.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PICHAU\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\Teste\\Teste\\tela04.cs",
+              "RelativeDocumentMoniker": "Teste\\tela04.cs",
+              "ToolTip": "C:\\Users\\PICHAU\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\Teste\\Teste\\tela04.cs [Design]",
+              "RelativeToolTip": "Teste\\tela04.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T01:45:44.215Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "tela05.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PICHAU\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\Teste\\Teste\\tela05.cs",
+              "RelativeDocumentMoniker": "Teste\\tela05.cs",
+              "ToolTip": "C:\\Users\\PICHAU\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\Teste\\Teste\\tela05.cs [Design]",
+              "RelativeToolTip": "Teste\\tela05.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T01:45:44.926Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "tela06.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PICHAU\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\Teste\\Teste\\tela06.cs",
+              "RelativeDocumentMoniker": "Teste\\tela06.cs",
+              "ToolTip": "C:\\Users\\PICHAU\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\Teste\\Teste\\tela06.cs [Design]*",
+              "RelativeToolTip": "Teste\\tela06.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T01:45:45.861Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "tela07.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PICHAU\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\Teste\\Teste\\tela07.cs",
+              "RelativeDocumentMoniker": "Teste\\tela07.cs",
+              "ToolTip": "C:\\Users\\PICHAU\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\Teste\\Teste\\tela07.cs [Design]*",
+              "RelativeToolTip": "Teste\\tela07.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T01:45:46.652Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "tela10.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PICHAU\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\Teste\\Teste\\tela10.cs",
+              "RelativeDocumentMoniker": "Teste\\tela10.cs",
+              "ToolTip": "C:\\Users\\PICHAU\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\Teste\\Teste\\tela10.cs [Design]",
+              "RelativeToolTip": "Teste\\tela10.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T01:45:48.708Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PICHAU\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\teste02\\teste02\\Form1.cs",
+              "RelativeDocumentMoniker": "..\\teste02\\teste02\\Form1.cs",
+              "ToolTip": "C:\\Users\\PICHAU\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\teste02\\teste02\\Form1.cs [Design]",
+              "RelativeToolTip": "..\\teste02\\teste02\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T01:46:14.714Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "tela08.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PICHAU\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\Teste\\Teste\\tela08.cs",
+              "RelativeDocumentMoniker": "Teste\\tela08.cs",
+              "ToolTip": "C:\\Users\\PICHAU\\source\\repos\\projeto_carro\\lavibp08\\projeto_carro\\Teste\\Teste\\tela08.cs [Design]",
+              "RelativeToolTip": "Teste\\tela08.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T01:45:47.922Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
