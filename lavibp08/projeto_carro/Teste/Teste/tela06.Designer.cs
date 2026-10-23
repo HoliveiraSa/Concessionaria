@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tela06));
             this.venda = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -44,6 +45,11 @@
             this.botao13 = new System.Windows.Forms.PictureBox();
             this.botao12 = new System.Windows.Forms.PictureBox();
             this.menu6 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.venda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao14)).BeginInit();
@@ -227,6 +233,40 @@
             this.menu6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.menu6.TabIndex = 14;
             this.menu6.TabStop = false;
+            this.menu6.Click += new System.EventHandler(this.menu6_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(342, 290);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(821, 20);
+            this.textBox1.TabIndex = 15;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(341, 390);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(578, 20);
+            this.textBox2.TabIndex = 17;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(340, 474);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(577, 20);
+            this.textBox3.TabIndex = 18;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(340, 564);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(577, 20);
+            this.textBox4.TabIndex = 19;
             // 
             // tela06
             // 
@@ -235,6 +275,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1384, 846);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.menu6);
             this.Controls.Add(this.botao12);
             this.Controls.Add(this.botao13);
@@ -272,6 +316,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.botao12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.menu6)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -292,5 +337,10 @@
         private System.Windows.Forms.PictureBox botao13;
         private System.Windows.Forms.PictureBox botao12;
         private System.Windows.Forms.PictureBox menu6;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
     }
 }

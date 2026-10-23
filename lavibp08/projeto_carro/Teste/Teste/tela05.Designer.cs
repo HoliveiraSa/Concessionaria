@@ -98,6 +98,7 @@
             this.menu5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.menu5.TabIndex = 13;
             this.menu5.TabStop = false;
+            this.menu5.Click += new System.EventHandler(this.menu5_Click);
             // 
             // tela05
             // 

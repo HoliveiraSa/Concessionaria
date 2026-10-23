@@ -70,6 +70,7 @@
             this.menu9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.menu9.TabIndex = 13;
             this.menu9.TabStop = false;
+            this.menu9.Click += new System.EventHandler(this.menu9_Click);
             // 
             // tela09
             // 

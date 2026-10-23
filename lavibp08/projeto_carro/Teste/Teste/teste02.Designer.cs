@@ -228,6 +228,7 @@
             this.menu2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.menu2.TabIndex = 16;
             this.menu2.TabStop = false;
+            this.menu2.Click += new System.EventHandler(this.menu2_Click);
             // 
             // tela02
             // 

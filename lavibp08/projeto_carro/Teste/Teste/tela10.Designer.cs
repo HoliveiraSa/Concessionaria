@@ -29,124 +29,133 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tela10));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.vendedor = new System.Windows.Forms.PictureBox();
+            this.home = new System.Windows.Forms.PictureBox();
+            this.vendedores = new System.Windows.Forms.PictureBox();
+            this.veiculo = new System.Windows.Forms.PictureBox();
+            this.veiculos = new System.Windows.Forms.PictureBox();
+            this.cliente = new System.Windows.Forms.PictureBox();
+            this.clientes = new System.Windows.Forms.PictureBox();
+            this.venda = new System.Windows.Forms.PictureBox();
+            this.vendas = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.vendedor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.home)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vendedores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veiculo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veiculos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.venda)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vendas)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // vendedor
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(66, 100);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(516, 77);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.vendedor.BackColor = System.Drawing.Color.Transparent;
+            this.vendedor.Image = ((System.Drawing.Image)(resources.GetObject("vendedor.Image")));
+            this.vendedor.Location = new System.Drawing.Point(66, 100);
+            this.vendedor.Name = "vendedor";
+            this.vendedor.Size = new System.Drawing.Size(516, 77);
+            this.vendedor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.vendedor.TabIndex = 0;
+            this.vendedor.TabStop = false;
+            this.vendedor.Click += new System.EventHandler(this.vendedor_Click);
             // 
-            // pictureBox2
+            // home
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(216, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.home.BackColor = System.Drawing.Color.Transparent;
+            this.home.Image = ((System.Drawing.Image)(resources.GetObject("home.Image")));
+            this.home.Location = new System.Drawing.Point(12, 12);
+            this.home.Name = "home";
+            this.home.Size = new System.Drawing.Size(216, 50);
+            this.home.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.home.TabIndex = 1;
+            this.home.TabStop = false;
+            this.home.Click += new System.EventHandler(this.home_Click);
             // 
-            // pictureBox3
+            // vendedores
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(81, 152);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(516, 76);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.vendedores.BackColor = System.Drawing.Color.Transparent;
+            this.vendedores.Image = ((System.Drawing.Image)(resources.GetObject("vendedores.Image")));
+            this.vendedores.Location = new System.Drawing.Point(81, 152);
+            this.vendedores.Name = "vendedores";
+            this.vendedores.Size = new System.Drawing.Size(516, 76);
+            this.vendedores.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.vendedores.TabIndex = 2;
+            this.vendedores.TabStop = false;
+            this.vendedores.Click += new System.EventHandler(this.vendedores_Click);
             // 
-            // pictureBox4
+            // veiculo
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(46, 263);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(516, 74);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
+            this.veiculo.BackColor = System.Drawing.Color.Transparent;
+            this.veiculo.Image = ((System.Drawing.Image)(resources.GetObject("veiculo.Image")));
+            this.veiculo.Location = new System.Drawing.Point(46, 263);
+            this.veiculo.Name = "veiculo";
+            this.veiculo.Size = new System.Drawing.Size(516, 74);
+            this.veiculo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.veiculo.TabIndex = 3;
+            this.veiculo.TabStop = false;
+            this.veiculo.Click += new System.EventHandler(this.veiculo_Click);
             // 
-            // pictureBox5
+            // veiculos
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(46, 312);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(516, 74);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
+            this.veiculos.BackColor = System.Drawing.Color.Transparent;
+            this.veiculos.Image = ((System.Drawing.Image)(resources.GetObject("veiculos.Image")));
+            this.veiculos.Location = new System.Drawing.Point(46, 312);
+            this.veiculos.Name = "veiculos";
+            this.veiculos.Size = new System.Drawing.Size(516, 74);
+            this.veiculos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.veiculos.TabIndex = 4;
+            this.veiculos.TabStop = false;
+            this.veiculos.Click += new System.EventHandler(this.veiculos_Click);
             // 
-            // pictureBox6
+            // cliente
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(34, 423);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(515, 61);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
+            this.cliente.BackColor = System.Drawing.Color.Transparent;
+            this.cliente.Image = ((System.Drawing.Image)(resources.GetObject("cliente.Image")));
+            this.cliente.Location = new System.Drawing.Point(34, 423);
+            this.cliente.Name = "cliente";
+            this.cliente.Size = new System.Drawing.Size(515, 61);
+            this.cliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cliente.TabIndex = 5;
+            this.cliente.TabStop = false;
+            this.cliente.Click += new System.EventHandler(this.cliente_Click);
             // 
-            // pictureBox7
+            // clientes
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(46, 475);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(515, 61);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 6;
-            this.pictureBox7.TabStop = false;
+            this.clientes.BackColor = System.Drawing.Color.Transparent;
+            this.clientes.Image = ((System.Drawing.Image)(resources.GetObject("clientes.Image")));
+            this.clientes.Location = new System.Drawing.Point(46, 475);
+            this.clientes.Name = "clientes";
+            this.clientes.Size = new System.Drawing.Size(515, 61);
+            this.clientes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.clientes.TabIndex = 6;
+            this.clientes.TabStop = false;
+            this.clientes.Click += new System.EventHandler(this.clientes_Click);
             // 
-            // pictureBox8
+            // venda
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(46, 589);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(515, 70);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 7;
-            this.pictureBox8.TabStop = false;
+            this.venda.BackColor = System.Drawing.Color.Transparent;
+            this.venda.Image = ((System.Drawing.Image)(resources.GetObject("venda.Image")));
+            this.venda.Location = new System.Drawing.Point(46, 589);
+            this.venda.Name = "venda";
+            this.venda.Size = new System.Drawing.Size(515, 70);
+            this.venda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.venda.TabIndex = 7;
+            this.venda.TabStop = false;
+            this.venda.Click += new System.EventHandler(this.venda_Click);
             // 
-            // pictureBox9
+            // vendas
             // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(34, 652);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(515, 71);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 8;
-            this.pictureBox9.TabStop = false;
+            this.vendas.BackColor = System.Drawing.Color.Transparent;
+            this.vendas.Image = ((System.Drawing.Image)(resources.GetObject("vendas.Image")));
+            this.vendas.Location = new System.Drawing.Point(34, 652);
+            this.vendas.Name = "vendas";
+            this.vendas.Size = new System.Drawing.Size(515, 71);
+            this.vendas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.vendas.TabIndex = 8;
+            this.vendas.TabStop = false;
+            this.vendas.Click += new System.EventHandler(this.vendas_Click);
             // 
             // tela10
             // 
@@ -154,44 +163,44 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(1384, 846);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.vendas);
+            this.Controls.Add(this.venda);
+            this.Controls.Add(this.clientes);
+            this.Controls.Add(this.cliente);
+            this.Controls.Add(this.veiculos);
+            this.Controls.Add(this.veiculo);
+            this.Controls.Add(this.vendedores);
+            this.Controls.Add(this.home);
+            this.Controls.Add(this.vendedor);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1400, 885);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1400, 885);
             this.Name = "tela10";
             this.Text = "tela10";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vendedor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.home)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vendedores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veiculo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veiculos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.venda)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vendas)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox vendedor;
+        private System.Windows.Forms.PictureBox home;
+        private System.Windows.Forms.PictureBox vendedores;
+        private System.Windows.Forms.PictureBox veiculo;
+        private System.Windows.Forms.PictureBox veiculos;
+        private System.Windows.Forms.PictureBox cliente;
+        private System.Windows.Forms.PictureBox clientes;
+        private System.Windows.Forms.PictureBox venda;
+        private System.Windows.Forms.PictureBox vendas;
     }
 }

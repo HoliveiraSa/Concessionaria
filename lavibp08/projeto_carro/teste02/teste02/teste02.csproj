@@ -54,6 +54,65 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tabela1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tabela1.Designer.cs">
+      <DependentUpon>tabela1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabela2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tabela2.Designer.cs">
+      <DependentUpon>tabela2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabela3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tabela3.Designer.cs">
+      <DependentUpon>tabela3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabela4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tabela4.Designer.cs">
+      <DependentUpon>tabela4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tela01.cs" />
+    <Compile Include="tela10.cs" />
+    <Compile Include="tela12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tela12.Designer.cs">
+      <DependentUpon>tela12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tela13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tela13.Designer.cs">
+      <DependentUpon>tela13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tela14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tela14.Designer.cs">
+      <DependentUpon>tela14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tela15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tela15.Designer.cs">
+      <DependentUpon>tela15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tela16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tela16.Designer.cs">
+      <DependentUpon>tela16.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +122,33 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="tabela1.resx">
+      <DependentUpon>tabela1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabela2.resx">
+      <DependentUpon>tabela2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabela3.resx">
+      <DependentUpon>tabela3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabela4.resx">
+      <DependentUpon>tabela4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tela12.resx">
+      <DependentUpon>tela12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tela13.resx">
+      <DependentUpon>tela13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tela14.resx">
+      <DependentUpon>tela14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tela15.resx">
+      <DependentUpon>tela15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tela16.resx">
+      <DependentUpon>tela16.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

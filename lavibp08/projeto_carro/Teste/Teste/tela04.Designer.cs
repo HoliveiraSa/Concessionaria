@@ -70,6 +70,7 @@
             this.menu4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.menu4.TabIndex = 13;
             this.menu4.TabStop = false;
+            this.menu4.Click += new System.EventHandler(this.menu4_Click);
             // 
             // tela04
             // 

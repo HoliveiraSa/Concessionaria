@@ -297,6 +297,7 @@
             this.menu3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.menu3.TabIndex = 22;
             this.menu3.TabStop = false;
+            this.menu3.Click += new System.EventHandler(this.menu3_Click);
             // 
             // tela03
             // 

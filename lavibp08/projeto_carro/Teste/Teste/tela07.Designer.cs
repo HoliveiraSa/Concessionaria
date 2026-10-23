@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tela07));
             this.seguro = new System.Windows.Forms.PictureBox();
             this.check1 = new System.Windows.Forms.PictureBox();
@@ -49,6 +50,14 @@
             this.botao17 = new System.Windows.Forms.PictureBox();
             this.botao18 = new System.Windows.Forms.PictureBox();
             this.menu7 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.seguro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.check1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cobertura)).BeginInit();
@@ -293,6 +302,61 @@
             this.menu7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.menu7.TabIndex = 20;
             this.menu7.TabStop = false;
+            this.menu7.Click += new System.EventHandler(this.menu7_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(498, 482);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(468, 20);
+            this.textBox1.TabIndex = 21;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(503, 372);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(33, 20);
+            this.textBox2.TabIndex = 23;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(567, 372);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(25, 20);
+            this.textBox3.TabIndex = 24;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(623, 372);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(25, 20);
+            this.textBox4.TabIndex = 25;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(819, 372);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(28, 20);
+            this.textBox5.TabIndex = 26;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(878, 372);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(28, 20);
+            this.textBox6.TabIndex = 27;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(942, 372);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(27, 20);
+            this.textBox7.TabIndex = 28;
             // 
             // tela07
             // 
@@ -301,6 +365,13 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1384, 846);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.menu7);
             this.Controls.Add(this.botao18);
             this.Controls.Add(this.botao17);
@@ -348,6 +419,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.botao18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.menu7)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -373,5 +445,13 @@
         private System.Windows.Forms.PictureBox botao17;
         private System.Windows.Forms.PictureBox botao18;
         private System.Windows.Forms.PictureBox menu7;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox7;
     }
 }

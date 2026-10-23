@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Teste
 {
@@ -36,6 +37,17 @@ namespace Teste
         private void botao4_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void menu2_Click(object sender, EventArgs e)
+        {
+            //botao de clique, o código aqui dentro roda quando o usuário clica na foto
+            menu2.BorderStyle = BorderStyle.Fixed3D;
+            menu2.BorderStyle = BorderStyle.None;
+            //criamos uma nova instância da tela de destino
+            tela10 novatela = new tela10();
+            //abrimos a nova tela
+            novatela.Show();
         }
     }
 }

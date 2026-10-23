@@ -40,6 +40,9 @@
             this.botao19 = new System.Windows.Forms.PictureBox();
             this.botao20 = new System.Windows.Forms.PictureBox();
             this.menu8 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -175,6 +178,28 @@
             this.menu8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.menu8.TabIndex = 13;
             this.menu8.TabStop = false;
+            this.menu8.Click += new System.EventHandler(this.menu8_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(226, 357);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(366, 20);
+            this.textBox1.TabIndex = 14;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(773, 357);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(367, 20);
+            this.textBox2.TabIndex = 15;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(226, 485);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(906, 20);
+            this.textBox3.TabIndex = 16;
             // 
             // tela08
             // 
@@ -183,6 +208,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1384, 846);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.menu8);
             this.Controls.Add(this.botao20);
             this.Controls.Add(this.botao19);
@@ -212,6 +240,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.botao20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.menu8)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -228,5 +257,8 @@
         private System.Windows.Forms.PictureBox botao19;
         private System.Windows.Forms.PictureBox botao20;
         private System.Windows.Forms.PictureBox menu8;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
