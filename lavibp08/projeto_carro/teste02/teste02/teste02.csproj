@@ -33,8 +33,51 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\..\Teste\packages\BouncyCastle.Cryptography.2.6.2\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.35.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\..\Teste\packages\Google.Protobuf.3.35.0\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\..\Teste\packages\K4os.Compression.LZ4.1.3.8\lib\net462\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\..\Teste\packages\K4os.Compression.LZ4.Streams.1.3.8\lib\net462\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\..\Teste\packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=26.10.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\..\Teste\packages\MySql.Data.26.10.0\lib\net462\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\Teste\packages\System.Buffers.4.6.0\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=10.0.0.8, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\Teste\packages\System.Configuration.ConfigurationManager.10.0.8\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Pipelines, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\Teste\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\Teste\packages\System.Memory.4.6.0\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\Teste\packages\System.Numerics.Vectors.4.6.0\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\Teste\packages\System.Runtime.CompilerServices.Unsafe.6.1.0\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\Teste\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,74 +87,77 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="ZstdSharp, Version=0.8.8.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
+      <HintPath>..\..\Teste\packages\ZstdSharp.Port.0.8.8\lib\net462\ZstdSharp.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="cadastroVendedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="cadastroVendedor.Designer.cs">
+      <DependentUpon>cadastroVendedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="tabela1.cs">
+    <Compile Include="tabelaDeVendas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="tabela1.Designer.cs">
-      <DependentUpon>tabela1.cs</DependentUpon>
+    <Compile Include="tabelaDeVendas.Designer.cs">
+      <DependentUpon>tabelaDeVendas.cs</DependentUpon>
     </Compile>
-    <Compile Include="tabela2.cs">
+    <Compile Include="tabelaDeVendedores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="tabela2.Designer.cs">
-      <DependentUpon>tabela2.cs</DependentUpon>
+    <Compile Include="tabelaDeVendedores.Designer.cs">
+      <DependentUpon>tabelaDeVendedores.cs</DependentUpon>
     </Compile>
-    <Compile Include="tabela3.cs">
+    <Compile Include="tabelaDeClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="tabela3.Designer.cs">
-      <DependentUpon>tabela3.cs</DependentUpon>
+    <Compile Include="tabelaDeClientes.Designer.cs">
+      <DependentUpon>tabelaDeClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="tabela4.cs">
+    <Compile Include="tabelaDeVeiculos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="tabela4.Designer.cs">
-      <DependentUpon>tabela4.cs</DependentUpon>
+    <Compile Include="tabelaDeVeiculos.Designer.cs">
+      <DependentUpon>tabelaDeVeiculos.cs</DependentUpon>
     </Compile>
     <Compile Include="tela01.cs" />
     <Compile Include="tela10.cs" />
-    <Compile Include="tela12.cs">
+    <Compile Include="enderecoVendedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="tela12.Designer.cs">
-      <DependentUpon>tela12.cs</DependentUpon>
+    <Compile Include="enderecoVendedor.Designer.cs">
+      <DependentUpon>enderecoVendedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="tela13.cs">
+    <Compile Include="vendedorCadastroSucesso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="tela13.Designer.cs">
-      <DependentUpon>tela13.cs</DependentUpon>
+    <Compile Include="vendedorCadastroSucesso.Designer.cs">
+      <DependentUpon>vendedorCadastroSucesso.cs</DependentUpon>
     </Compile>
-    <Compile Include="tela14.cs">
+    <Compile Include="cadastroVeiculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="tela14.Designer.cs">
-      <DependentUpon>tela14.cs</DependentUpon>
+    <Compile Include="cadastroVeiculo.Designer.cs">
+      <DependentUpon>cadastroVeiculo.cs</DependentUpon>
     </Compile>
-    <Compile Include="tela15.cs">
+    <Compile Include="cadastroVeiculoEspecificacoes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="tela15.Designer.cs">
-      <DependentUpon>tela15.cs</DependentUpon>
+    <Compile Include="cadastroVeiculoEspecificacoes.Designer.cs">
+      <DependentUpon>cadastroVeiculoEspecificacoes.cs</DependentUpon>
     </Compile>
-    <Compile Include="tela16.cs">
+    <Compile Include="veiculoCadastroSucesso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="tela16.Designer.cs">
-      <DependentUpon>tela16.cs</DependentUpon>
+    <Compile Include="veiculoCadastroSucesso.Designer.cs">
+      <DependentUpon>veiculoCadastroSucesso.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="cadastroVendedor.resx">
+      <DependentUpon>cadastroVendedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -122,33 +168,34 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="tabela1.resx">
-      <DependentUpon>tabela1.cs</DependentUpon>
+    <EmbeddedResource Include="tabelaDeVendas.resx">
+      <DependentUpon>tabelaDeVendas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="tabela2.resx">
-      <DependentUpon>tabela2.cs</DependentUpon>
+    <EmbeddedResource Include="tabelaDeVendedores.resx">
+      <DependentUpon>tabelaDeVendedores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="tabela3.resx">
-      <DependentUpon>tabela3.cs</DependentUpon>
+    <EmbeddedResource Include="tabelaDeClientes.resx">
+      <DependentUpon>tabelaDeClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="tabela4.resx">
-      <DependentUpon>tabela4.cs</DependentUpon>
+    <EmbeddedResource Include="tabelaDeVeiculos.resx">
+      <DependentUpon>tabelaDeVeiculos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="tela12.resx">
-      <DependentUpon>tela12.cs</DependentUpon>
+    <EmbeddedResource Include="enderecoVendedor.resx">
+      <DependentUpon>enderecoVendedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="tela13.resx">
-      <DependentUpon>tela13.cs</DependentUpon>
+    <EmbeddedResource Include="vendedorCadastroSucesso.resx">
+      <DependentUpon>vendedorCadastroSucesso.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="tela14.resx">
-      <DependentUpon>tela14.cs</DependentUpon>
+    <EmbeddedResource Include="cadastroVeiculo.resx">
+      <DependentUpon>cadastroVeiculo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="tela15.resx">
-      <DependentUpon>tela15.cs</DependentUpon>
+    <EmbeddedResource Include="cadastroVeiculoEspecificacoes.resx">
+      <DependentUpon>cadastroVeiculoEspecificacoes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="tela16.resx">
-      <DependentUpon>tela16.cs</DependentUpon>
+    <EmbeddedResource Include="veiculoCadastroSucesso.resx">
+      <DependentUpon>veiculoCadastroSucesso.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

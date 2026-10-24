@@ -16,7 +16,7 @@ namespace Teste
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new tela_inicial());
+            Application.Run(new autenticacao());
         }
     }
 }

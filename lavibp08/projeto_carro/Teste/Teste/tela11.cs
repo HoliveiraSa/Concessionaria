@@ -2,7 +2,7 @@
 
 namespace Teste
 {
-    internal class tela11
+    internal class cadastroVendedor
     {
         internal void Show()
         {
