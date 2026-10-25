@@ -45,14 +45,13 @@
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.botao17 = new System.Windows.Forms.PictureBox();
             this.botao18 = new System.Windows.Forms.PictureBox();
-            this.menu7 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.seguro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.check1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cobertura)).BeginInit();
@@ -68,7 +67,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu7)).BeginInit();
             this.SuspendLayout();
             // 
             // seguro
@@ -237,18 +235,7 @@
             this.botao18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.botao18.TabIndex = 19;
             this.botao18.TabStop = false;
-            // 
-            // menu7
-            // 
-            this.menu7.BackColor = System.Drawing.Color.Transparent;
-            this.menu7.Image = ((System.Drawing.Image)(resources.GetObject("menu7.Image")));
-            this.menu7.Location = new System.Drawing.Point(12, 31);
-            this.menu7.Name = "menu7";
-            this.menu7.Size = new System.Drawing.Size(43, 35);
-            this.menu7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.menu7.TabIndex = 20;
-            this.menu7.TabStop = false;
-            this.menu7.Click += new System.EventHandler(this.menu7_Click);
+            this.botao18.Click += new System.EventHandler(this.botao18_Click);
             // 
             // contextMenuStrip1
             // 
@@ -290,10 +277,19 @@
             this.maskedTextBox1.Location = new System.Drawing.Point(506, 371);
             this.maskedTextBox1.Mask = "00/00/0000";
             this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.maskedTextBox1.Size = new System.Drawing.Size(82, 20);
             this.maskedTextBox1.TabIndex = 32;
             this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
             this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
+            // 
+            // maskedTextBox3
+            // 
+            this.maskedTextBox3.Location = new System.Drawing.Point(506, 481);
+            this.maskedTextBox3.Mask = " 999,999,999,999,99$";
+            this.maskedTextBox3.Name = "maskedTextBox3";
+            this.maskedTextBox3.Size = new System.Drawing.Size(100, 20);
+            this.maskedTextBox3.TabIndex = 34;
+            this.maskedTextBox3.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox3_MaskInputRejected);
             // 
             // maskedTextBox2
             // 
@@ -301,18 +297,9 @@
             this.maskedTextBox2.Mask = "00/00/0000";
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox2.TabIndex = 33;
+            this.maskedTextBox2.TabIndex = 35;
             this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
-            this.maskedTextBox2.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox2_MaskInputRejected);
-            // 
-            // maskedTextBox3
-            // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(506, 481);
-            this.maskedTextBox3.Mask = " 9999999999,99$";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox3.TabIndex = 34;
-            this.maskedTextBox3.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox3_MaskInputRejected);
+            this.maskedTextBox2.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox2_MaskInputRejected_1);
             // 
             // vendaSeguro
             // 
@@ -321,13 +308,12 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1384, 846);
-            this.Controls.Add(this.maskedTextBox3);
             this.Controls.Add(this.maskedTextBox2);
+            this.Controls.Add(this.maskedTextBox3);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.menu7);
             this.Controls.Add(this.botao18);
             this.Controls.Add(this.botao17);
             this.Controls.Add(this.pictureBox15);
@@ -364,7 +350,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -387,13 +372,12 @@
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox botao17;
         private System.Windows.Forms.PictureBox botao18;
-        private System.Windows.Forms.PictureBox menu7;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
         private System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
     }
 }

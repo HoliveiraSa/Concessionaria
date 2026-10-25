@@ -51,7 +51,6 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.botao6 = new System.Windows.Forms.PictureBox();
             this.botao7 = new System.Windows.Forms.PictureBox();
-            this.menu3 = new System.Windows.Forms.PictureBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bairro)).BeginInit();
@@ -68,7 +67,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.logradouro1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu3)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -284,18 +282,6 @@
             this.botao7.TabStop = false;
             this.botao7.Click += new System.EventHandler(this.botao7_Click);
             // 
-            // menu3
-            // 
-            this.menu3.BackColor = System.Drawing.Color.Transparent;
-            this.menu3.Image = ((System.Drawing.Image)(resources.GetObject("menu3.Image")));
-            this.menu3.Location = new System.Drawing.Point(12, 32);
-            this.menu3.Name = "menu3";
-            this.menu3.Size = new System.Drawing.Size(43, 35);
-            this.menu3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.menu3.TabIndex = 22;
-            this.menu3.TabStop = false;
-            this.menu3.Click += new System.EventHandler(this.menu3_Click);
-            // 
             // maskedTextBox1
             // 
             this.maskedTextBox1.Location = new System.Drawing.Point(251, 369);
@@ -313,7 +299,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1384, 846);
             this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.menu3);
             this.Controls.Add(this.botao7);
             this.Controls.Add(this.botao6);
             this.Controls.Add(this.textBox6);
@@ -355,7 +340,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.logradouro1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -384,7 +368,6 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.PictureBox botao6;
         private System.Windows.Forms.PictureBox botao7;
-        private System.Windows.Forms.PictureBox menu3;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }

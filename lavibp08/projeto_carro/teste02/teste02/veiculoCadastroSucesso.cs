@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
+
 namespace teste02
 {
     public partial class veiculoCadastroSucesso : Form
@@ -23,26 +24,13 @@ namespace teste02
 
         }
 
-        private void botao30_Click(object sender, EventArgs e) //botao de conclyusao que volta pra home
+
+
+       
+        private void botao30_Click_1(object sender, EventArgs e)
         {
-          
-            botao30.BorderStyle = BorderStyle.Fixed3D;
-            botao30.BorderStyle = BorderStyle.None;
-          
-            tela01 novatela = new tela01();
-           
-            novatela.Show();
+            this.Close();
         }
 
-        private void menu14_Click(object sender, EventArgs e)//botao do menu
-        {
-          
-            menu14.BorderStyle = BorderStyle.Fixed3D;
-            menu14.BorderStyle = BorderStyle.None;
-           
-            tela10 novatela = new tela10();
-        
-            novatela.Show();
-        }
     }
 }

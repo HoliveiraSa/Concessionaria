@@ -31,10 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(veiculoCadastroSucesso));
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.botao30 = new System.Windows.Forms.PictureBox();
-            this.menu14 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu14)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox3
@@ -58,35 +56,22 @@
             this.botao30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.botao30.TabIndex = 1;
             this.botao30.TabStop = false;
+            this.botao30.Click += new System.EventHandler(this.botao30_Click_1);
             // 
-            // menu14
-            // 
-            this.menu14.BackColor = System.Drawing.Color.Transparent;
-            this.menu14.Image = ((System.Drawing.Image)(resources.GetObject("menu14.Image")));
-            this.menu14.Location = new System.Drawing.Point(12, 32);
-            this.menu14.Name = "menu14";
-            this.menu14.Size = new System.Drawing.Size(43, 35);
-            this.menu14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.menu14.TabIndex = 14;
-            this.menu14.TabStop = false;
-            this.menu14.Click += new System.EventHandler(this.menu14_Click);
-            // 
-            // tela16
+            // veiculoCadastroSucesso
             // 
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1384, 846);
-            this.Controls.Add(this.menu14);
             this.Controls.Add(this.botao30);
             this.Controls.Add(this.pictureBox3);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1400, 885);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1400, 885);
-            this.Name = "tela16";
+            this.Name = "veiculoCadastroSucesso";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu14)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -97,6 +82,5 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox botao30;
-        private System.Windows.Forms.PictureBox menu14;
     }
 }

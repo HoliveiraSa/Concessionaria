@@ -20,24 +20,9 @@ namespace Teste
 
         private void botao21_Click(object sender, EventArgs e) //botao que conclui e volta pra home
         {
-            
-            botao21.BorderStyle = BorderStyle.Fixed3D;
-            botao21.BorderStyle = BorderStyle.None;
-           
-            tela01 novatela = new tela01();
-            
-            novatela.Show();
+           this.Close();
         }
 
-        private void menu9_Click(object sender, EventArgs e) //botao do menu
-        {
-      
-            menu9.BorderStyle = BorderStyle.Fixed3D;
-            menu9.BorderStyle = BorderStyle.None;
-            
-            menu novatela = new menu();
-           
-            novatela.Show();
-        }
+       
     }
 }

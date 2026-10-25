@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using teste02;
 
 namespace Teste
 {
@@ -17,15 +18,66 @@ namespace Teste
             InitializeComponent();
         }
 
-        private void botao22_Click(object sender, EventArgs e) //botao de concluir, verifica se a senha digitada é igual a 0000 ou cpf do vendedor e abre a tela de destino
+        private void botao22_Click(object sender, EventArgs e)
         {
-      
-            botao22.BorderStyle = BorderStyle.Fixed3D;
-            botao22.BorderStyle = BorderStyle.None;
-            
+            string entrada = textBox1.Text.Trim();
+
+           
+            if (entrada == "0000")
+            {
+                AbrirTelaPrincipal();
+                return;
+            }
+
+            // Remove pontos, traços e outros caracteres do CPF
+            string cpf = new string(
+                entrada.Where(char.IsDigit).ToArray()
+            );
+
+            // Verifica se o CPF possui 11 números
+            if (cpf.Length != 11)
+            {
+                MessageBox.Show(
+                    "Digite o código ou um CPF válido de vendedor"
+                );
+                return;
+            }
+
+            try
+            {
+                DAO bd = new DAO();
+
+                // Consulta se o CPF pertence a um vendedor cadastrado
+                DataTable resultado = bd.BuscarVendedorPorCpf(cpf);
+
+                if (resultado.Rows.Count > 0)
+                {
+                    AbrirTelaPrincipal();
+                }
+                else
+                {
+                    MessageBox.Show(
+                        "CPF não encontrado! Acesso negado"
+                    );
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Erro ao verificar o acesso:\n" + ex.Message
+                );
+            }
+        }
+
+        private void AbrirTelaPrincipal()
+        {
             tela01 novatela = new tela01();
-            
-            novatela.Show();
+
+            this.Hide();
+
+            novatela.ShowDialog();
+
+            this.Close();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)//texto onde vai a senha 0000 ou o cpf de algum vendedor

@@ -13,10 +13,43 @@ namespace Teste
 {
     public partial class vendaSeguro : Form
     {
+        public DateTime DataVenda { get; private set; }
+        public string CpfCliente { get; private set; }
+        public string CpfVendedor { get; private set; }
+        public int CodigoVeiculo { get; private set; }
+        public decimal ValorVeiculo { get; private set; }
         public vendaSeguro()
         {
             InitializeComponent();
         }
+        public vendaSeguro(
+       DateTime dataVenda,
+       string cpfCliente,
+       string cpfVendedor,
+       int codigoVeiculo,
+       decimal valorVeiculo) : this()
+        {
+            DataVenda = dataVenda;
+
+           
+
+            CpfCliente = cpfCliente;
+            CpfVendedor = cpfVendedor;
+            CodigoVeiculo = codigoVeiculo;
+            ValorVeiculo = valorVeiculo;
+
+            // Mostrar a data inicial da vigência (data da venda)
+            maskedTextBox1.Text = DataVenda.ToString("dd/MM/yyyy");
+            maskedTextBox1.ReadOnly = true;
+
+            maskedTextBox1.ReadOnly = true;
+            // A data final do seguro será informada pelo usuário
+            maskedTextBox2.Clear();
+            maskedTextBox2.ReadOnly = false;
+            maskedTextBox2.Enabled = true;
+            AtualizarSeguro();
+        }
+
 
         private void check1_Click(object sender, EventArgs e)
         {
@@ -25,13 +58,7 @@ namespace Teste
 
         private void botao17_Click(object sender, EventArgs e)
         {
-            //botao de clique, o código aqui dentro roda quando o usuário clica na foto
-            botao17.BorderStyle = BorderStyle.Fixed3D;
-            botao17.BorderStyle = BorderStyle.None;
-            //criamos uma nova instância da tela de destino
-            tela02 novatela = new tela02();
-            //abrimos a nova tela
-            novatela.Show();
+          this.Close();
         }
 
         
@@ -47,27 +74,164 @@ namespace Teste
 
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)//checkbox de segur, caso esteja desativada significa que o cliente não quer seguro, ou seja, os campos de textos nao podem estar possibilitados de escrever
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
+            if (!checkBox1.Checked)
+            {
+                checkBox2.Checked = false;
+                checkBox3.Checked = false;
+                maskedTextBox2.Clear();
+            }
 
+            AtualizarSeguro();
         }
 
-        private void checkBox2_CheckedChanged(object sender, EventArgs e) //checkbox de seguro parcial, ele vai ficar 5% o valor do carro
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox2.Checked)
+            {
+                checkBox3.Checked = false;
+            }
 
+            AtualizarSeguro();
         }
 
-        private void checkBox3_CheckedChanged(object sender, EventArgs e) //checkbox de seguro integral, ele vai ficar 10% o valor do carro
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
+            if (checkBox3.Checked)
+            {
+                checkBox2.Checked = false;
+            }
 
+            AtualizarSeguro();
         }
 
-        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) //campo de texto que vai ficar o valor que a venda ta sendo realizada de acordo com o que foi colocado, ele nao pode ser alterado e tem que ja ter a data
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) //campo que vai ficar a data do inicio da vigencia ou seja data da venda
         {
 
         }
 
         private void maskedTextBox2_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) //campo de texto que vai ficar a data final do seguro
+        {
+
+        }
+
+        private void AtualizarSeguro()
+        {
+            // campos ligados so se tiver seguro
+            checkBox2.Enabled = checkBox1.Checked;
+            checkBox3.Enabled = checkBox1.Checked;
+            maskedTextBox2.Enabled = checkBox1.Checked;
+
+            decimal valorAdicional = 0;
+
+            if (checkBox1.Checked)
+            {
+                if (checkBox2.Checked)
+                {
+                    valorAdicional = ValorVeiculo * 0.05m;
+                }
+                else if (checkBox3.Checked)
+                {
+                    valorAdicional = ValorVeiculo * 0.10m;
+                }
+            }
+
+            decimal valorTotal = ValorVeiculo + valorAdicional;
+
+            maskedTextBox3.Text = valorTotal.ToString(
+                "N2",
+                System.Globalization.CultureInfo.GetCultureInfo("pt-BR")
+            );
+
+            maskedTextBox3.ReadOnly = true;
+            
+        }
+
+        private void botao18_Click(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked &&
+                !checkBox2.Checked &&
+                !checkBox3.Checked)
+            {
+                MessageBox.Show(
+                    "Escolha o seguro parcial ou integral."
+                );
+                return;
+            }
+
+            bool possuiSeguro = checkBox1.Checked;
+            string tipoSeguro = "Sem seguro";
+            DateTime? dataFinalVigencia = null;
+
+         
+            if (checkBox2.Checked)
+            {
+                tipoSeguro = "Parcial";
+            }
+            else if (checkBox3.Checked)
+            {
+                tipoSeguro = "Integral";
+            }
+
+            
+            if (possuiSeguro)
+            {
+                if (!DateTime.TryParseExact(
+                     maskedTextBox2.Text.Trim(),
+                      "dd/MM/yyyy",
+                     System.Globalization.CultureInfo.InvariantCulture,
+                      System.Globalization.DateTimeStyles.None,
+                      out DateTime dataFinal))
+                {
+                    MessageBox.Show(
+                        "Digite uma data final válida para o seguro."
+                    );
+                    return;
+                }
+
+                if (dataFinal.Date < DataVenda.Date)
+                {
+                    MessageBox.Show(
+                        "A data final do seguro não pode ser anterior à data da venda."
+                    );
+                    return;
+                }
+
+                dataFinalVigencia = dataFinal;
+            }
+
+            // Calcular novamente o valor total
+            decimal valorAdicional = 0;
+
+            if (checkBox2.Checked)
+            {
+                valorAdicional = ValorVeiculo * 0.05m;
+            }
+            else if (checkBox3.Checked)
+            {
+                valorAdicional = ValorVeiculo * 0.10m;
+            }
+
+            decimal valorTotal = ValorVeiculo + valorAdicional;
+
+            // Abrir o resumo enviando os dados da venda
+            vendaResumo novatela = new vendaResumo(
+                DataVenda,
+                CpfCliente,
+                CpfVendedor,
+                CodigoVeiculo,
+                ValorVeiculo,
+                valorTotal,
+                possuiSeguro,
+                tipoSeguro,
+                dataFinalVigencia
+            );
+
+            novatela.Show();
+        }
+
+        private void maskedTextBox2_MaskInputRejected_1(object sender, MaskInputRejectedEventArgs e)//data que vai inserir pro final da vigencia
         {
 
         }

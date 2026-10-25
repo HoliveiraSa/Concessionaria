@@ -46,7 +46,6 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.botao27 = new System.Windows.Forms.PictureBox();
             this.botao28 = new System.Windows.Forms.PictureBox();
-            this.menu12 = new System.Windows.Forms.PictureBox();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -61,7 +60,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu12)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -243,18 +241,6 @@
             this.botao28.TabStop = false;
             this.botao28.Click += new System.EventHandler(this.botao28_Click);
             // 
-            // menu12
-            // 
-            this.menu12.BackColor = System.Drawing.Color.Transparent;
-            this.menu12.Image = ((System.Drawing.Image)(resources.GetObject("menu12.Image")));
-            this.menu12.Location = new System.Drawing.Point(12, 38);
-            this.menu12.Name = "menu12";
-            this.menu12.Size = new System.Drawing.Size(43, 35);
-            this.menu12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.menu12.TabIndex = 21;
-            this.menu12.TabStop = false;
-            this.menu12.Click += new System.EventHandler(this.menu12_Click);
-            // 
             // maskedTextBox2
             // 
             this.maskedTextBox2.Location = new System.Drawing.Point(340, 521);
@@ -272,7 +258,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1384, 846);
             this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.menu12);
             this.Controls.Add(this.botao28);
             this.Controls.Add(this.botao27);
             this.Controls.Add(this.textBox5);
@@ -309,7 +294,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -334,7 +318,6 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.PictureBox botao27;
         private System.Windows.Forms.PictureBox botao28;
-        private System.Windows.Forms.PictureBox menu12;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
     }
 }

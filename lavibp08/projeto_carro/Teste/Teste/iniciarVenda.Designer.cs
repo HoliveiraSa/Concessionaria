@@ -33,12 +33,10 @@
             this.botao10 = new System.Windows.Forms.PictureBox();
             this.botao11 = new System.Windows.Forms.PictureBox();
             this.botao09 = new System.Windows.Forms.PictureBox();
-            this.menu5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao09)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu5)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -89,18 +87,6 @@
             this.botao09.TabStop = false;
             this.botao09.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // menu5
-            // 
-            this.menu5.BackColor = System.Drawing.Color.Transparent;
-            this.menu5.Image = ((System.Drawing.Image)(resources.GetObject("menu5.Image")));
-            this.menu5.Location = new System.Drawing.Point(12, 32);
-            this.menu5.Name = "menu5";
-            this.menu5.Size = new System.Drawing.Size(43, 35);
-            this.menu5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.menu5.TabIndex = 13;
-            this.menu5.TabStop = false;
-            this.menu5.Click += new System.EventHandler(this.menu5_Click);
-            // 
             // iniciarVenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -108,7 +94,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1384, 846);
-            this.Controls.Add(this.menu5);
             this.Controls.Add(this.botao09);
             this.Controls.Add(this.botao11);
             this.Controls.Add(this.botao10);
@@ -123,7 +108,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.botao10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao09)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -134,6 +118,5 @@
         private System.Windows.Forms.PictureBox botao10;
         private System.Windows.Forms.PictureBox botao11;
         private System.Windows.Forms.PictureBox botao09;
-        private System.Windows.Forms.PictureBox menu5;
     }
 }

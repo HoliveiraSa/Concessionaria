@@ -17,6 +17,13 @@ namespace teste02
         {
             InitializeComponent();
         }
+        public int CodigoVeiculo { get; private set; }
+
+        public cadastroVeiculoEspecificacoes(int codigoVeiculo)
+            : this()
+        {
+            CodigoVeiculo = codigoVeiculo;
+        }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -43,27 +50,78 @@ namespace teste02
             this.Close();
         }
 
-        private void botao29_Click(object sender, EventArgs e) //botao que conclui o cadastro do veiculo e leva para a tela de sucesso
+        private void botao29_Click(object sender, EventArgs e) //botao de conclusao
         {
+            string combustivel = textBox1.Text.Trim();
+            string direcao = textBox2.Text.Trim();
+            string arCondicionado = textBox3.Text.Trim();
+            string centralMultimidia = textBox4.Text.Trim();
+            string portas = textBox5.Text.Trim();
+            string quilometragemTexto = textBox6.Text.Trim();
+            string bancos = textBox7.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(combustivel) ||
+                string.IsNullOrWhiteSpace(direcao) ||
+                string.IsNullOrWhiteSpace(arCondicionado) ||
+                string.IsNullOrWhiteSpace(centralMultimidia) ||
+                string.IsNullOrWhiteSpace(portas) ||
+                string.IsNullOrWhiteSpace(quilometragemTexto) ||
+                string.IsNullOrWhiteSpace(bancos))
+            {
+                MessageBox.Show("Preencha todos os campos das especificações.");
+                return;
+            }
+
            
-            botao29.BorderStyle = BorderStyle.Fixed3D;
-            botao29.BorderStyle = BorderStyle.None;
+            string numerosQuilometragem = new string(
+                quilometragemTexto.Where(char.IsDigit).ToArray()
+            );
 
-            veiculoCadastroSucesso novatela = new veiculoCadastroSucesso();
-         
-            novatela.Show();
-        }
+            if (!long.TryParse(numerosQuilometragem, out long quilometragem))
+            {
+                MessageBox.Show("Digite uma quilometragem válida.");
+                return;
+            }
 
-        private void menu13_Click(object sender, EventArgs e)//botao do menu
-        {
-            menu13.BorderStyle = BorderStyle.Fixed3D;
-            menu13.BorderStyle = BorderStyle.None;
-         
-            tela10 novatela = new tela10();
             
-            novatela.Show();
+            if (CodigoVeiculo <= 0)
+            {
+                MessageBox.Show("Não foi possível identificar o veículo cadastrado.");
+                return;
+            }
+
+            try
+            {
+                DAO bd = new DAO();
+
+               
+                bd.CadastrarEspecificacoesVeiculo(
+                    CodigoVeiculo,
+                    combustivel,
+                    direcao,
+                    arCondicionado,
+                    centralMultimidia,
+                    portas,
+                    quilometragem,
+                    bancos
+                );
+
+                veiculoCadastroSucesso novatela =
+                    new veiculoCadastroSucesso();
+
+                novatela.Show();
+
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Erro ao cadastrar as especificações:\n" + ex.Message
+                );
+            }
         }
 
+    
         private void textBox1_TextChanged(object sender, EventArgs e) //campo de texto de combustivel
         {
 

@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using teste02;
 
 namespace Teste
 {
     public partial class tela02 : Form
     {
+        private DAO bd = new DAO();
         public tela02()
         {
             InitializeComponent();
@@ -25,12 +27,16 @@ namespace Teste
 
         private void botao5_Click(object sender, EventArgs e)//botao de avancar
         {
-          
             botao5.BorderStyle = BorderStyle.Fixed3D;
             botao5.BorderStyle = BorderStyle.None;
-           
-            tela03 novatela = new tela03();
-            
+
+            tela03 novatela = new tela03(
+                textBox1.Text,
+                maskedTextBox1.Text,
+                maskedTextBox2.Text,
+                textBox4.Text
+            );
+
             novatela.Show();
         }
 
@@ -39,16 +45,7 @@ namespace Teste
             this.Close();
         }
 
-        private void menu2_Click(object sender, EventArgs e) //botao menu
-        {
-            
-            menu2.BorderStyle = BorderStyle.Fixed3D;
-            menu2.BorderStyle = BorderStyle.None;
-         
-            menu novatela = new menu();
-           
-            novatela.Show();
-        }
+      
 
         private void textBox1_TextChanged(object sender, EventArgs e) //texto onde vai o nome pra cadastro do cliente
         {

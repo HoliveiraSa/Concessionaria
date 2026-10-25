@@ -34,7 +34,6 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.logradouro1 = new System.Windows.Forms.PictureBox();
@@ -50,7 +49,7 @@
             this.numero = new System.Windows.Forms.PictureBox();
             this.bairro = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.menu10 = new System.Windows.Forms.PictureBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.botao25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logradouro1)).BeginInit();
@@ -66,7 +65,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numero)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bairro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu10)).BeginInit();
             this.SuspendLayout();
             // 
             // botao25
@@ -99,6 +97,7 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(977, 20);
             this.textBox6.TabIndex = 40;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // textBox5
             // 
@@ -106,6 +105,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(991, 20);
             this.textBox5.TabIndex = 39;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // textBox4
             // 
@@ -113,13 +113,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(991, 20);
             this.textBox4.TabIndex = 38;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(242, 416);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(991, 20);
-            this.textBox3.TabIndex = 37;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox2
             // 
@@ -127,6 +121,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(991, 20);
             this.textBox2.TabIndex = 36;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox1
             // 
@@ -134,6 +129,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(991, 20);
             this.textBox1.TabIndex = 35;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // logradouro1
             // 
@@ -278,32 +274,28 @@
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
-            // menu10
+            // maskedTextBox1
             // 
-            this.menu10.BackColor = System.Drawing.Color.Transparent;
-            this.menu10.Image = ((System.Drawing.Image)(resources.GetObject("menu10.Image")));
-            this.menu10.Location = new System.Drawing.Point(12, 35);
-            this.menu10.Name = "menu10";
-            this.menu10.Size = new System.Drawing.Size(43, 35);
-            this.menu10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.menu10.TabIndex = 43;
-            this.menu10.TabStop = false;
-            this.menu10.Click += new System.EventHandler(this.menu10_Click);
+            this.maskedTextBox1.Location = new System.Drawing.Point(244, 416);
+            this.maskedTextBox1.Mask = "99999-9999";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(68, 20);
+            this.maskedTextBox1.TabIndex = 44;
+            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
-            // tela12
+            // enderecoVendedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1384, 846);
-            this.Controls.Add(this.menu10);
+            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.botao25);
             this.Controls.Add(this.botao24);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.logradouro1);
@@ -323,7 +315,7 @@
             this.MaximumSize = new System.Drawing.Size(1400, 885);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1400, 885);
-            this.Name = "tela12";
+            this.Name = "enderecoVendedor";
             this.Text = "tela12";
             ((System.ComponentModel.ISupportInitialize)(this.botao25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao24)).EndInit();
@@ -340,7 +332,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numero)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bairro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -353,7 +344,6 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox logradouro1;
@@ -369,6 +359,6 @@
         private System.Windows.Forms.PictureBox numero;
         private System.Windows.Forms.PictureBox bairro;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox menu10;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }

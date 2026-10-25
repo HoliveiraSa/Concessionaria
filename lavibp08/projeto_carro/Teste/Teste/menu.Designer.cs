@@ -65,7 +65,7 @@
             // 
             this.vendedores.BackColor = System.Drawing.Color.Transparent;
             this.vendedores.Image = ((System.Drawing.Image)(resources.GetObject("vendedores.Image")));
-            this.vendedores.Location = new System.Drawing.Point(66, 181);
+            this.vendedores.Location = new System.Drawing.Point(65, 194);
             this.vendedores.Name = "vendedores";
             this.vendedores.Size = new System.Drawing.Size(516, 76);
             this.vendedores.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

@@ -54,7 +54,6 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.botao28 = new System.Windows.Forms.PictureBox();
             this.botao29 = new System.Windows.Forms.PictureBox();
-            this.menu13 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -73,7 +72,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu13)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -336,18 +334,6 @@
             this.botao29.TabStop = false;
             this.botao29.Click += new System.EventHandler(this.botao29_Click);
             // 
-            // menu13
-            // 
-            this.menu13.BackColor = System.Drawing.Color.Transparent;
-            this.menu13.Image = ((System.Drawing.Image)(resources.GetObject("menu13.Image")));
-            this.menu13.Location = new System.Drawing.Point(12, 34);
-            this.menu13.Name = "menu13";
-            this.menu13.Size = new System.Drawing.Size(43, 35);
-            this.menu13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.menu13.TabIndex = 25;
-            this.menu13.TabStop = false;
-            this.menu13.Click += new System.EventHandler(this.menu13_Click);
-            // 
             // cadastroVeiculoEspecificacoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -355,7 +341,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1384, 846);
-            this.Controls.Add(this.menu13);
             this.Controls.Add(this.botao29);
             this.Controls.Add(this.botao28);
             this.Controls.Add(this.textBox7);
@@ -406,7 +391,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu13)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -439,6 +423,5 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.PictureBox botao28;
         private System.Windows.Forms.PictureBox botao29;
-        private System.Windows.Forms.PictureBox menu13;
     }
 }

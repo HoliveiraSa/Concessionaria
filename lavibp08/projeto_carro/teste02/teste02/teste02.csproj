@@ -92,11 +92,48 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="atualizarVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="atualizarVeiculo.Designer.cs">
+      <DependentUpon>atualizarVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AtualizarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AtualizarCliente.Designer.cs">
+      <DependentUpon>AtualizarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="atualizarVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="atualizarVenda.Designer.cs">
+      <DependentUpon>atualizarVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="atualizarVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="atualizarVendedor.Designer.cs">
+      <DependentUpon>atualizarVendedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="cadastroVendedor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="cadastroVendedor.Designer.cs">
       <DependentUpon>cadastroVendedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chassi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chassi.Designer.cs">
+      <DependentUpon>Chassi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAO.cs" />
+    <Compile Include="digiteCpf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="digiteCpf.Designer.cs">
+      <DependentUpon>digiteCpf.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -156,8 +193,26 @@
     <Compile Include="veiculoCadastroSucesso.Designer.cs">
       <DependentUpon>veiculoCadastroSucesso.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AtualizarCliente.resx">
+      <DependentUpon>AtualizarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="atualizarVeiculo.resx">
+      <DependentUpon>atualizarVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="atualizarVenda.resx">
+      <DependentUpon>atualizarVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="atualizarVendedor.resx">
+      <DependentUpon>atualizarVendedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="cadastroVendedor.resx">
       <DependentUpon>cadastroVendedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chassi.resx">
+      <DependentUpon>Chassi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="digiteCpf.resx">
+      <DependentUpon>digiteCpf.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

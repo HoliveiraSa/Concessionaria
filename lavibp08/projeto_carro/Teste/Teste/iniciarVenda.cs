@@ -46,16 +46,7 @@ namespace Teste
             novatela.Show();
         }
 
-        private void menu5_Click(object sender, EventArgs e) //botao pro menu
-        {
-         
-            menu5.BorderStyle = BorderStyle.Fixed3D;
-            menu5.BorderStyle = BorderStyle.None;
-   
-            menu novatela = new menu();
-        
-            novatela.Show();
-        }
+      
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {

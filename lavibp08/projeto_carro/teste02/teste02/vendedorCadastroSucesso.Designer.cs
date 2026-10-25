@@ -31,10 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(vendedorCadastroSucesso));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.botao26 = new System.Windows.Forms.PictureBox();
-            this.menu11 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu11)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -60,37 +58,23 @@
             this.botao26.TabStop = false;
             this.botao26.Click += new System.EventHandler(this.botao26_Click);
             // 
-            // menu11
-            // 
-            this.menu11.BackColor = System.Drawing.Color.Transparent;
-            this.menu11.Image = ((System.Drawing.Image)(resources.GetObject("menu11.Image")));
-            this.menu11.Location = new System.Drawing.Point(12, 37);
-            this.menu11.Name = "menu11";
-            this.menu11.Size = new System.Drawing.Size(43, 35);
-            this.menu11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.menu11.TabIndex = 14;
-            this.menu11.TabStop = false;
-            this.menu11.Click += new System.EventHandler(this.menu11_Click);
-            // 
-            // tela13
+            // vendedorCadastroSucesso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1384, 846);
-            this.Controls.Add(this.menu11);
             this.Controls.Add(this.botao26);
             this.Controls.Add(this.pictureBox1);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1400, 885);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1400, 885);
-            this.Name = "tela13";
+            this.Name = "vendedorCadastroSucesso";
             this.Text = "tela13";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu11)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -99,6 +83,5 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox botao26;
-        private System.Windows.Forms.PictureBox menu11;
     }
 }

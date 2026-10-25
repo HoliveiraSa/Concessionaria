@@ -43,14 +43,17 @@ namespace Teste
             novatela.Show();
         }
 
-        private void veiculo_Click(object sender, EventArgs e) //botao que vai pra cadastrar veiculo
+        private void veiculo_Click(object sender, EventArgs e)//botao que vai pra cadastrar veiculos
         {
-           
             veiculo.BorderStyle = BorderStyle.Fixed3D;
             veiculo.BorderStyle = BorderStyle.None;
-           
-            cadastroVeiculo novatela = new cadastroVeiculo();
-            
+
+            cadastroVeiculo novatela = new cadastroVeiculo(() =>
+            {
+                menu novoMenu = new menu();
+                novoMenu.Show();
+            });
+
             novatela.Show();
         }
 
@@ -78,12 +81,12 @@ namespace Teste
 
         private void veiculos_Click(object sender, EventArgs e) //botao que vai pra tabela veiculos
         {
-           
+
             veiculos.BorderStyle = BorderStyle.Fixed3D;
             veiculos.BorderStyle = BorderStyle.None;
-           
+
             tabelaDeVeiculos novatela = new tabelaDeVeiculos();
-           
+
             novatela.Show();
         }
 
@@ -98,29 +101,40 @@ namespace Teste
             novatela.Show();
         }
 
-        private void vendas_Click(object sender, EventArgs e) //botao que vai pra tabela de vendas
+        private void vendas_Click(object sender, EventArgs e)
         {
-  
             vendas.BorderStyle = BorderStyle.Fixed3D;
             vendas.BorderStyle = BorderStyle.None;
-           
-            tabelaDeVendas novatela = new tabelaDeVendas();
-            
+
+            tabelaDeVendas novatela = new tabelaDeVendas(() =>
+            {
+                using (DeletarVenda janela = new DeletarVenda())
+                {
+                    if (janela.ShowDialog() == DialogResult.OK)
+                    {
+                        return (int?)janela.CodigoInformado;
+                    }
+
+                    return null;
+                }
+            });
+
             novatela.Show();
         }
 
 
-        private void pictureBox1_Click(object sender, EventArgs e)//botao que vai pra cadastrar vendedor
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
             pictureBox1.BorderStyle = BorderStyle.None;
 
-            tela11 novatela = new tela11();
+            tela11 novatela = new tela11(() =>
+            {
+                menu novaTela = new menu();
+                novaTela.Show();
+            });
 
             novatela.Show();
-
-
         }
     }
     

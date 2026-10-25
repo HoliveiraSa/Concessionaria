@@ -13,34 +13,53 @@ namespace teste02
 {
     public partial class tela11 : Form
     {
-        public tela11() => InitializeComponent();
+        private readonly Action abrirMenu;
 
+        public tela11() : this(null)
+        {
+        }
+
+        public tela11(Action abrirMenu)
+        {
+            InitializeComponent();
+            this.abrirMenu = abrirMenu;
+        }
         private void botao23_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void botao22_Click(object sender, EventArgs e) //botao de texto que avança pro endereço do vendedor
+        private void botao22_Click(object sender, EventArgs e)
         {
-          
             botao22.BorderStyle = BorderStyle.Fixed3D;
             botao22.BorderStyle = BorderStyle.None;
-           
-            enderecoVendedor novatela = new enderecoVendedor();
-           
+
+            // Pegar somente os números do CPF
+            string cpf = new string(
+                maskedTextBox2.Text.Where(char.IsDigit).ToArray()
+            );
+
+            // Verificar se o CPF tem 11 números
+            if (cpf.Length != 11)
+            {
+                MessageBox.Show(
+                    "O CPF deve conter exatamente 11 números."
+                );
+                return;
+            }
+
+            // Passar os dados para a tela de endereço
+            enderecoVendedor novatela = new enderecoVendedor(
+                textBox1.Text,
+                maskedTextBox2.Text,
+                cpf,
+                textBox4.Text
+            );
+
             novatela.Show();
         }
 
-        private void menu9_Click(object sender, EventArgs e) //botao de menu
-        {
-            
-            menu9.BorderStyle = BorderStyle.Fixed3D;
-            menu9.BorderStyle = BorderStyle.None;
-       
-            tela10 novatela = new tela10();
-           
-            novatela.Show();
-        }
+     
 
         private void textBox1_TextChanged(object sender, EventArgs e) //campo de textyo de nome
         {
@@ -52,10 +71,6 @@ namespace teste02
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e) //campo de texto de telefone
-        {
-
-        }
 
         private void textBox3_TextChanged(object sender, EventArgs e) //campo de texto de cpf
         {
@@ -63,6 +78,16 @@ namespace teste02
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)//campo de texto de email
+        {
+
+        }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) //telefone
+        {
+
+        }
+
+        private void maskedTextBox2_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) //cpf
         {
 
         }

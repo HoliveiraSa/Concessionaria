@@ -31,10 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(vendaSucesso));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.botao21 = new System.Windows.Forms.PictureBox();
-            this.menu9 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu9)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -60,37 +58,23 @@
             this.botao21.TabStop = false;
             this.botao21.Click += new System.EventHandler(this.botao21_Click);
             // 
-            // menu9
-            // 
-            this.menu9.BackColor = System.Drawing.Color.Transparent;
-            this.menu9.Image = ((System.Drawing.Image)(resources.GetObject("menu9.Image")));
-            this.menu9.Location = new System.Drawing.Point(12, 38);
-            this.menu9.Name = "menu9";
-            this.menu9.Size = new System.Drawing.Size(43, 35);
-            this.menu9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.menu9.TabIndex = 13;
-            this.menu9.TabStop = false;
-            this.menu9.Click += new System.EventHandler(this.menu9_Click);
-            // 
-            // tela09
+            // vendaSucesso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1384, 846);
-            this.Controls.Add(this.menu9);
             this.Controls.Add(this.botao21);
             this.Controls.Add(this.pictureBox1);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1400, 885);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1400, 885);
-            this.Name = "tela09";
+            this.Name = "vendaSucesso";
             this.Text = "tela09";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.botao21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu9)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -99,6 +83,5 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox botao21;
-        private System.Windows.Forms.PictureBox menu9;
     }
 }
